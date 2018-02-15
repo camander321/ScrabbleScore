@@ -1,0 +1,17 @@
+
+@{
+  Layout = "_Layout";
+}
+
+<div class="word">
+  @foreach(var c in @Model.GetWord())
+  {
+    <span class="tile">@c</span>
+  }
+</div>
+
+<h3>@Model.GetScore()</h3>
+
+
+
+<a href="/">TAKE ME BACK</a>
